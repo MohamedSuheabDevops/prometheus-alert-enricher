@@ -74,8 +74,26 @@ python test_alert.py
 - AI output can be wrong. Verify before acting on it.
 
 ## Screenshots
+### Enriched alert in the UI
+![Alert card]<img width="1285" height="594" alt="ui-alert-card" src="https://github.com/user-attachments/assets/899cb833-9a9f-4350-a98e-9757fd072ec5" />
 
-Add screenshots of the UI and Grafana dashboard here.
+### Another example: a down target
+![TargetDown alert]<img width="784" height="457" alt="ui-target-down" src="https://github.com/user-attachments/assets/9466f991-d2e9-434d-83b7-6c47e9efa527" />
+
+### Grafana dashboard
+![Grafana dashboard]<img width="1350" height="579" alt="grafana-dashboard" src="https://github.com/user-attachments/assets/61b92335-b09c-4588-9a64-9d8cb642da01" />
+
+### Prometheus alert rules
+![Prometheus alerts]<img width="1319" height="573" alt="prometheus-alerts" src="https://github.com/user-attachments/assets/ab5464a9-c25e-4067-8627-35fd584e200f" />
+
+### Prometheus targets
+![Prometheus targets]<img width="1354" height="519" alt="prometheus-targets" src="https://github.com/user-attachments/assets/5a050153-3223-42ee-a764-369f883ffc88" />
+
+
+
+
+
+
 
 ## Tech stack
 
