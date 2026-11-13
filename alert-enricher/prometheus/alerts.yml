@@ -1,0 +1,28 @@
+groups:
+  - name: demo
+    rules:
+      - alert: DemoAlwaysFiring
+        expr: vector(1)
+        labels:
+          severity: info
+        annotations:
+          summary: "Demo alert to test the pipeline"
+          description: "This alert always fires so you can test the enricher."
+
+      - alert: TargetDown
+        expr: up == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "A scrape target is down"
+          description: "Target {{ $labels.instance }} of job {{ $labels.job }} has been unreachable for 30s."
+
+      - alert: HighMemoryUsage
+        expr: (1 - node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) * 100 > 85
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Memory usage above 85%"
+          description: "Instance {{ $labels.instance }} is using more than 85% of its memory."
