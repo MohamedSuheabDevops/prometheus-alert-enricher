@@ -2,6 +2,14 @@
 
 Turns raw Prometheus alerts into plain-English explanations with likely causes and runbook steps, using Azure OpenAI (gpt-4o-mini).
 
+## Background
+
+This was my project for the Hexaware AI/GenAI Honors program. The goal was to
+build a working prototype with a basic UI, prompt design, security and data
+privacy considerations, and test cases. I chose an alert enricher because it
+combines my interest in SRE and observability (Prometheus, Alertmanager,
+Grafana) with generative AI.
+
 ## How it works
 
 ```mermaid
